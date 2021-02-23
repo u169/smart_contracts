@@ -35,7 +35,7 @@ contract MLM {
         wallets.push(msg.sender);
     }
     
-    function addPartner(address _iCId) external payable {
+    function register(address _iCId) external payable {
         require(msg.value >= fee, "Not enough!");
         createPartner(_iCId);
         
