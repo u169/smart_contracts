@@ -36,7 +36,7 @@ contract MLM {
     }
     
     function addPartner(address _iCId) external payable {
-        require(msg.value >= fee, "Not enought!");
+        require(msg.value >= fee, "Not enough!");
         createPartner(_iCId);
         
         uint _value = msg.value;
